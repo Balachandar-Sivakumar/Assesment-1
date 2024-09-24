@@ -1,0 +1,8 @@
+Font Family:  
+Roboto Slab
+Hind Guntur
+
+Colors Used: 
+#B40023
+#7B0C26
+#005E2C
