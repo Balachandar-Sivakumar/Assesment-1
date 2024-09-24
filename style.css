@@ -26,6 +26,33 @@ header{
     height: 105px;
 }
 
+.header-ul li:hover{
+    background-color: rgb(128, 128, 128,0.5);
+
+
+}
+
+.header-ul li{
+    position: relative;
+    padding: 10px;
+    transition: 0.5s linear;
+}
+
+.header-ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(135deg, green,yellow , red);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.header-ul li:hover::after{
+    width: 100%;
+    transition: 1s linear;
+}
+
 
 #searching{
     position: absolute;
@@ -136,6 +163,12 @@ ul{
     font-weight: 900;
 }
 
+#first-container-button:hover{
+    color: black;
+    background-color: white;
+    transition: .5s linear;
+}
+
 .second-container{
     background-image: url(./Assets/Rectangle\ 4361.png);
     background-repeat: no-repeat;
@@ -202,6 +235,12 @@ ul{
     cursor: pointer;
 }
 
+.third-container-content button:hover{
+    color: black;
+    background-color: white;
+    transition: .5s linear;
+}
+
 .image{
     width: 50%;
 }
@@ -259,6 +298,12 @@ ul{
     cursor: pointer;
 }
 
+.fourth-container-content button:hover{
+    color: black;
+    background-color: white;
+    transition: .5s linear;
+}
+
 
 .fifth-container{
     display: flex;
@@ -309,6 +354,12 @@ ul{
     font-weight: 900;
     border: none;
     cursor: pointer;
+}
+
+.fifth-container-content button:hover{
+    color: white;
+    background-color: black;
+    transition: .5s linear;
 }
 
 .sixth-container{
@@ -369,6 +420,12 @@ ul{
     cursor: pointer;
 }
 
+.sixth-content button:hover{
+    color: white;
+    background-color: black;
+    transition: .5s linear;
+}
+
 footer{
     background-image: url(./Assets/Group\ 5370.png);
     background-repeat: no-repeat;
@@ -396,6 +453,17 @@ footer{
 .main-footer ul li a{
     text-decoration: none;
     color: black;
+    
+}
+.main-footer ul li{
+    /* text-align: center; */
+    padding: 5px 10px;
+}
+
+.main-footer ul li:hover{
+    color: black;
+    background-color: rgb(128, 128, 128,0.5);
+    transition: 0.5s linear;
 }
 .contact{
     display: flex;
